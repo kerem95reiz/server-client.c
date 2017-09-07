@@ -7,7 +7,7 @@ int main(){
 	//creating socket
 	int network_socket;
 	network_socket=socket(AF_INET,SOCK_STREAM,0);//domain, type, protocol
-	if(network_socket<-1){
+	if(network_socket<0){
 	perror("Socket coudn't creat\n");
 	exit(0);
 	}
